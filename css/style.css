@@ -1,0 +1,79 @@
+body{
+    background: #000000;        /* use #000000 six digits for autograder purposes*/
+    color: #FFFFFF;             /* changes text color*/
+    font-family: "Times New Roman", sans-serif;
+}
+h1{
+    font-size: 64px;
+    text-align: center;
+    padding: 10px; 
+}
+h2{
+    font-size: 32px;
+    text-shadow: 4px 4px 2px #808080;
+}
+p{
+    font-size: 24px;
+    padding-top: 15px;
+    padding-right: 0%;
+    padding-bottom: 0%;
+    padding-left: 0%;
+}
+img{
+    display: block;             /* are all images on their own line? */
+    margin-left: auto;
+    margin-right: auto;
+    width: 550px;               /* confirm this does not warp image? */
+}
+div{
+    min-height: 150px;
+    height: auto; /* howto adjust height automatically if needed? */
+    padding-top: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+}
+
+#red{
+    background: #FF0000;
+    text-align: right;
+}
+#blue{
+    background: #0000FF;
+    text-align: left;
+}
+#yellow{
+    background: #FFFF00;
+    text-align: right;
+}    
+#yellow > h2 {    
+    color: #000000; /* heading within div yellow  */
+    text-shadow: 4px 4px 2px #c7e2c7;  /* shadow in div yelow header2---is this right? example doesn't show */
+}
+#yellow > p{
+    color: #000000;  /* paragraph within div yellow */
+}
+#green{
+    background: #008000;
+    text-align: left;
+}
+footer{
+    text-align: center;
+    /*padding: 0% 10px 10px 0%;*/
+}
+footer > p{
+    padding-top: 0%;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 0%;
+}
+/*
+red div vs blue div vs yellow div vs green div (in html: div id="red")
+If I want to style red section use: 
+
+#red{
+    background: #FF0000;
+}
+
+use inspect element to confirm footer works correctly - testing where 
+diff styles are coming from*/
